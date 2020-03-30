@@ -1,12 +1,10 @@
 let searchedLocation = localStorage.getItem('loc');
 
-
-
 ((searchedLoc)=>{
     document.querySelector('.loading').style.display = 'block';
     document.querySelector('.currently').style.display = 'none';
     document.querySelector('.weekly').style.display = 'none';
-    fetch(`http://localhost:3000/weather-api?location=${searchedLoc}`).then((response)=>{
+    fetch(`/weather-api?location=${searchedLoc}`).then((response)=>{
         response.json().then((data) =>{
             if(data.error){
                 console.log(data.error);
@@ -69,7 +67,6 @@ const UIUpdate = (data)=>{
 
 
 }
-
 
 document.querySelector('.searchbox__btn').addEventListener('click', ()=> {
     let area = document.querySelector('.search__input').value;
