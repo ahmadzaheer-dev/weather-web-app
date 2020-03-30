@@ -1,0 +1,89 @@
+.global-header{
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+}
+
+.global-header .nav img{
+    height: 50px;
+}
+
+.global-header .nav{
+    display: flex;
+}
+
+.global-header .nav ul{
+    margin-top: 15px;
+    display: flex;
+    list-style: none;
+}
+
+.global-header .nav ul li{
+    margin-left: 20px;
+}
+
+.global-header .nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: color .3s;
+}
+
+.global-header .nav ul li:hover a{
+    color:#3085a3;
+}
+
+.global-header .searchbox{
+    margin-top: 3px;
+    position: relative;
+    height: 45px;
+    width: 350px;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+.global-header .searchbox input{
+    width: 80%;
+    border: 0;
+    background-color: rgba(0,0,0,0);
+    position: absolute;
+    top:45%;
+    left:20px;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+.global-header .searchbox input:focus{
+    outline: none;
+}
+
+.global-header .searchbox .searchbox__btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    padding: 2px;
+    background-color: #fff;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+.global-header .searchbox .searchbox__btn .fas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    transition: color .3s;
+}
+
+.global-header .searchbox .searchbox__btn:hover .fas{
+    color: #fff;
+}
+
+.global-header .searchbox .searchbox__btn:hover{
+    background-color: #3085a3;
+}

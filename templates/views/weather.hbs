@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/footer.css">
+    <link rel="stylesheet" href="/stylesheets/weather.css">
+    <link rel="stylesheet" href="/stylesheets/header.css">
+
+    <title>Weather App</title>
+</head>
+<body>
+
+    <!-- header partial-->
+    {{>header}}
+
+    <section class="loading">
+        <img src="/images/loading.gif" alt="Loading">
+    </section>
+
+    <!-- Today's Update -->
+    <section class="currently">
+        <div class="row">
+            <h2 class="location__text">-----</h2>
+        </div>
+        <div class="row">
+            <h2 class="currently__heading">Current Weather Update</h2>
+        </div>
+        <div class="row currently__grid">
+            <div class="conditionbox">
+                <h3 class="conditionbox__heading">Current Weather</h3>
+                <h4 class="conditionbox__time">2:04 PM</h4>
+                <img class="conditionbox__icon" src="/images/sun.png" alt="Icon">
+                <h1 class="conditionbox__temp temp-cel">--</h1>
+                <p class="conditionbox__summary">---</p>
+            </div>
+
+            <div class="detailbox">
+                <h3 class="detailbox__heading">Humidity</h3>
+                <img class="detailbox__icon" src="/images/humidity.png" alt="Humidity Icon">
+                <h2 class="detailbox__value current-humidity">--</h2>
+            </div>
+            <div class="detailbox">
+                <h3 class="detailbox__heading">Visibility</h3>
+                <img class="detailbox__icon" src="/images/eye.png" alt="Visibility Icon">
+                <h2 class="detailbox__value current-visibility">--</h2>
+            </div>
+            <div class="detailbox">
+                <h3 class="detailbox__heading">Pressure</h3>
+                <img class="detailbox__icon" src="/images/pressure.png" alt="Pressure Icon">
+                <h2 class="detailbox__value current-pressure">--</h2>
+            </div>
+            <div class="detailbox">
+                <h3 class="detailbox__heading">Wind Speed</h3>
+                <img class="detailbox__icon" src="/images/wind-speed.png" alt="Wind Icon">
+                <h2 class="detailbox__value current-wind">--</h2>
+            </div>
+            <div class="detailbox">
+                <h3 class="detailbox__heading">UV Index</h3>
+                <img class="detailbox__icon" src="/images/uv.png" alt="UV Icon">
+                <h2 class="detailbox__value current-uv">--</h2>
+            </div>
+            <div class="detailbox">
+                <h3 class="detailbox__heading">Cloud Cover</h3>
+                <img class="detailbox__icon" src="/images/cloud-cover.png" alt="Cloud Icon">
+                <h2 class="detailbox__value current-cloud">--</h2>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Weekly update -->
+    <section class="weekly">
+        <div class="row">
+            <h2 class="weekly__heading">Weekly Weather Update</h2>
+        </div>
+
+        <div class="row weekly__grid">
+            <div class="weatherbox weatherbox--today">
+                <h3 class="weatherbox__day">Today</h3>
+                <!--<h4 class="weatherbox__date">25 Mar</h4>-->
+                <img class="weatherbox__img" src="/images/sun.png" alt="icon">
+                <div class="weatherbox__temp">
+                    <p class="weatherbox__temp--high">--°</p>
+                    <p class="weatherbox__temp--low">--°</p>
+                </div>
+            </div>
+            <div class="weatherbox">
+                <h3 class="weatherbox__day">Mon</h3>
+                <!--<h4 class="weatherbox__date">25 Mar</h4>-->
+                <img class="weatherbox__img" src="/images/sun.png" alt="icon">
+                <div class="weatherbox__temp">
+                    <p class="weatherbox__temp--high">--°</p>
+                    <p class="weatherbox__temp--low">--°</p>
+                </div>
+            </div>
+            <div class="weatherbox">
+                <h3 class="weatherbox__day">Tue</h3>
+                <!--<h4 class="weatherbox__date">25 Mar</h4>-->
+                <img class="weatherbox__img" src="/images/sun.png" alt="icon">
+                <div class="weatherbox__temp">
+                    <p class="weatherbox__temp--high">--°</p>
+                    <p class="weatherbox__temp--low">--°</p>
+                </div>
+            </div>
+            <div class="weatherbox">
+                <h3 class="weatherbox__day">Wed</h3>
+                <!--<h4 class="weatherbox__date">25 Mar</h4>-->
+                <img class="weatherbox__img" src="/images/sun.png" alt="icon">
+                <div class="weatherbox__temp">
+                    <p class="weatherbox__temp--high">--°</p>
+                    <p class="weatherbox__temp--low">--°</p>
+                </div>
+            </div>
+            <div class="weatherbox">
+                <h3 class="weatherbox__day">Thu</h3>
+                <!--<h4 class="weatherbox__date">25 Mar</h4>-->
+                <img class="weatherbox__img" src="/images/sun.png" alt="icon">
+                <div class="weatherbox__temp">
+                    <p class="weatherbox__temp--high">--°</p>
+                    <p class="weatherbox__temp--low">--°</p>
+                </div>
+            </div>
+            <div class="weatherbox">
+                <h3 class="weatherbox__day">Fri</h3>
+                <!--<h4 class="weatherbox__date">25 Mar</h4>-->
+                <img class="weatherbox__img" src="/images/sun.png" alt="icon">
+                <div class="weatherbox__temp">
+                    <p class="weatherbox__temp--high">--°</p>
+                    <p class="weatherbox__temp--low">--°</p>
+                </div>
+            </div>
+            <div class="weatherbox">
+                <h3 class="weatherbox__day">Sat</h3>
+                <!--<h4 class="weatherbox__date">25 Mar</h4>-->
+                <img class="weatherbox__img" src="/images/sun.png" alt="icon">
+                <div class="weatherbox__temp">
+                    <p class="weatherbox__temp--high">--°</p>
+                    <p class="weatherbox__temp--low">--°</p>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+
+    <!-- footer partial -->
+    {{>footer}}
+
+    <script src="/scripts/weatherScript.js"></script>
+</body>
+</html>
